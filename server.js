@@ -29,8 +29,10 @@ const homeRoute = require("./routes/homeRoute")
 const profileRoute = require("./routes/profileRoute");
 
 
-app.get("/", homeRoute)
-app.get("/profile/",profileRoute)
+app.use("/", homeRoute)
+
+app.use("/profile", profileRoute)
+
 
 
 
