@@ -33,7 +33,10 @@ app.use("/", homeRoute)
 
 app.use("/profile", profileRoute)
 
-
+app.get("/callback", (req, res) => {
+    console.log("ok")
+    res.end()
+})
 
 
 app.listen(PORT, () => console.log(`server on ${PORT}`));
