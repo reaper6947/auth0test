@@ -22,15 +22,19 @@
                 <img src="<%= picture %>" alt="" width="32">
                 <%= name %></a>
             <form class="d-flex" role="search">
-
+                <button class="btn btn-outline-success" type="button"
+                onclick="redir()">home</button>
 
             </form>
         </div>
     </nav>
 
-<script>
-
-</script>
+    <script>
+        const redir = (str)=>{
+            window.location.href = window.location.origin
+            
+        }
+    </script>
 </body>
 
 </html>
